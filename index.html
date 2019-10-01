@@ -7,6 +7,7 @@
     <title>Music Space!</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -39,7 +40,24 @@
         </div>
     </div>
 
-    <!--1st container holds the Top Songs-->
+        <!--1st container upcoming shows-->
+<div class="container">
+        <div class="card">
+            <div class="card-content">
+                <p class="title">
+                    Upcoming Shows
+                </p>
+                <p class="subtitle">
+                    Show #1
+                </p>
+                <p class="subtitle">
+                    Show #2
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!--2nd container holds the Top Songs-->
 
     <!-- need to have js file that creates an element for each song via onclick function-->
     <div class="container">
@@ -57,7 +75,8 @@
             </div>
         </div>
     </div>
-    <!--2nd container holds the Top Albums-->
+
+    <!--3rd container holds the Top Albums-->
     <div class="container">
         <div class="card">
             <div class="card-content">
@@ -75,7 +94,7 @@
     </div>
 
 
-
+<script src="music-app.js"></script>
 </body>
 
 </html>
