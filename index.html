@@ -11,7 +11,7 @@
 </head>
 
 <body>
-<!--NavBar-->
+    <!--NavBar-->
     <nav class="navbar" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
             <a class="navbar-item">
@@ -40,8 +40,8 @@
         </div>
     </div>
 
-        <!--1st container upcoming shows-->
-<div class="container">
+    <!--1st container upcoming shows-->
+    <div class="container">
         <div class="card">
             <div class="card-content">
                 <p class="title">
@@ -63,15 +63,48 @@
     <div class="container">
         <div class="card">
             <div class="card-content">
-                <p class="title">
-                    Top Songs
-                </p>
-                <p class="subtitle">
-                    Song #1
-                </p>
-                <p class="subtitle">
-                    Song #2
-                </p>
+                <p class="title">Top Songs</p>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Title</th>
+                            <th>Number of Plays</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <th>1</th>
+                            <td id="Song1"></td>
+                            <td id="songplays1"></td>
+                        </tr>
+
+                        <tr>
+                            <th>2</th>
+                            <td id="Song2"></td>
+                            <td id="songplays2"></td>
+                        </tr>
+
+                        <tr>
+                            <th>3</th>
+                            <td id="Song3"></td>
+                            <td id="songplays3"></td>
+                        </tr>
+
+                        <tr>
+                            <th>4</th>
+                            <td id="Song4"></td>
+                            <td id="songplays4"></td>
+                        </tr>
+
+                        <tr>
+                            <th>5</th>
+                            <td id="Song5"></td>
+                            <td id="songplays5"></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
@@ -88,14 +121,15 @@
                     <div class="column subtitle" id="album2"></div>
                     <div class="column subtitle" id="album3"></div>
                     <div class="column subtitle" id="album4"></div>
-                  </div>
+                </div>
             </div>
         </div>
     </div>
 
 
-<script src="music-app.js"></script>
-<script src="topalbums.js"></script>
+    <script src="music-app.js"></script>
+    <script src="topalbums.js"></script>
+    <script src="topsongs.js"></script>
 </body>
 
 </html>
