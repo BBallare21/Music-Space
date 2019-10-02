@@ -8,36 +8,27 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!--NavBar-->
-    <nav class="navbar" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-            <a class="navbar-item">
-                <h1>Music-Space</h1>
-            </a>
-        </div>
-    </nav>
-
-
     <!-- Form that allows the user to search for an Artist and hit the submit or cancel button-->
-    <div class="container">
+    <div id="searchbar" class="container">
         <div class="field">
-            <label class="label">Artist</label>
+            <label class="label has-text-light"></label>
             <div class="control">
                 <input class="input" type="text" placeholder="Name of Artist">
             </div>
         </div>
 
         <div class="field is-grouped">
-            <div class="control">
-                <button class="button is-link" type="submit" id="submitButton">Submit</button>
+                <div class="control">
+                    <button class="button is-success" type="submit" id="submitButton"><i class="fas fa-search"></i>Search</button>
+                </div>
+                <div class="control">
+                    <button class="button is-danger" type="submit" id="cancelButton"><i class="fas fa-exclamation-triangle"></i>Clear</button>
+                </div>
             </div>
-            <div class="control">
-                <button class="button is-text" id="cancelButton">Cancel</button>
-            </div>
-        </div>
     </div>
 
 
@@ -46,7 +37,7 @@
         <div class="columns">
             <!--Left column holds the Top Songs-->
             <div class="column">
-                <div class="card">
+                <div id="topsongsdiv" class="card">
                     <div class="card-content">
                         <p class="title">Top Songs</p>
                         <table class="table">
@@ -96,7 +87,7 @@
 
             <!--Right column holds upcoming shows-->
             <div class="column">
-                <section class="hero is-info">
+                <section id="upcomingshowsdiv" class="hero">
                     <div class="hero-body">
                         <div class="container">
                             <div class="title">Upcoming Shows</div>
@@ -115,7 +106,7 @@
 
     <!--3rd container holds the Top Albums-->
     <div class="container">
-        <div class="card">
+        <div id="topalbumsdiv" class="card">
             <div class="card-content">
                 <p class="title">
                     Top Albums
