@@ -1,10 +1,5 @@
 
-let trackSearch = "lover"
-let trackArtist = ""
-let artist = "anberlin";
-
-
-function getAlbum() {
+function getAlbum(artist) {
     let lastAPIKey = "8173e09c55bc9e07b713c6edcd74e63e";
     let lastTopAlbum = "http://ws.audioscrobbler.com/2.0/?method=artist.gettopalbums&artist=" + artist + "&api_key=" + lastAPIKey + "&format=json";
 
@@ -52,4 +47,3 @@ $.ajax({
         $('#album4').append(alDiv4);
     });
 }
-getAlbum();

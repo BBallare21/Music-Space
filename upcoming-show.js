@@ -1,10 +1,10 @@
 
+function getUpcomingShows(artist){
+
 let ticketAPIKey = "Ni82NUKOyTGYQYTtVKDK6zAzqMhxnI49";
 
-let artist = 'Taylor Swift'
-
 let ticketURL ="http://app.ticketmaster.com/discovery/v1/events.json?keyword=" + artist + "&apikey=" + ticketAPIKey;
-
+console.log(ticketURL)
 $.ajax({
     url: ticketURL,
     method: "GET"
@@ -43,7 +43,6 @@ $.ajax({
         // let ticketLinkDiv = $("#ticketLink");
         $("#ticketLink").text("Buy Tickets: "+ ticketLink);
 
-
 });
 
-
+};
