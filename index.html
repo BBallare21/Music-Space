@@ -22,13 +22,15 @@
         </div>
 
         <div class="field is-grouped">
-                <div class="control">
-                    <button class="button is-success" type="submit" id="submitButton"><i class="fas fa-search"></i>Search</button>
-                </div>
-                <div class="control">
-                    <button class="button is-danger" type="submit" id="cancelButton"><i class="fas fa-exclamation-triangle"></i>Clear</button>
-                </div>
+            <div class="control">
+                <button class="button is-success" type="submit" id="submitButton"><i
+                        class="fas fa-search"></i>Search</button>
             </div>
+            <div class="control">
+                <button class="button is-danger" type="submit" id="cancelButton"><i
+                        class="fas fa-exclamation-triangle"></i>Clear</button>
+            </div>
+        </div>
     </div>
 
 
@@ -39,8 +41,8 @@
             <div class="column">
                 <div id="topsongsdiv" class="card">
                     <div class="card-content">
-                        <p class="title">Top Songs</p>
-                        <table class="table">
+                        <p class="title has-text-centered">Top Songs</p>
+                        <table class="table is-fullwidth">
                             <thead>
                                 <tr>
                                     <th>#</th>
@@ -87,23 +89,21 @@
 
             <!--Right column holds upcoming shows-->
             <div class="column">
-                <section class="hero is-info">
-                    <div class="hero-body">
-                        <div class="container">
-                            <div class="title">Upcoming Shows</div>
-                            <div class="subtitle" id="showName"></div>
-                            <div class="subtitle" id="showDate"></div>
-                            <div class="subtitle" id="showTime"></div>
-                            <div class="subtitle" id="venue"></div>
-                            <div class="subtitle" id="venueLocation"></div>
-                            <div class="control">             
-                                <a class="button is-link" type="submit" id="ticketBtn" href="" target="_blank">
-                                    Buy Tickets
-                                </a> 
-                            </div>
+                <div id="upcomingshowsdiv" class="card">
+                    <div class="card-content">
+                        <div class="title has-text-centered">Upcoming Shows</div>
+                        <div class="subtitle" id="showName"></div>
+                        <div class="subtitle" id="showDate"></div>
+                        <div class="subtitle" id="showTime"></div>
+                        <div class="subtitle" id="venue"></div>
+                        <div class="subtitle" id="venueLocation"></div>
+                        <div class="control">
+                            <a class="button is-link" type="submit" id="ticketBtn" href="" target="_blank">
+                                Buy Tickets
+                            </a>
                         </div>
                     </div>
-                </section>
+                </div>
             </div>
         </div>
     </div>
@@ -112,7 +112,7 @@
     <div class="container">
         <div id="topalbumsdiv" class="card">
             <div class="card-content">
-                <p class="title">
+                <p class="title has-text-centered">
                     Top Albums
                 </p>
                 <div class="columns is-mobile">
