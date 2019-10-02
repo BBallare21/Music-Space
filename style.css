@@ -27,19 +27,27 @@ width: 50%;
 }
 
 .table {
-background-color: pink;
+width: 500px;
+
 }
 
 
 #topsongsdiv {
-padding-bottom: 23px;
+height: 400px;
+margin: auto;
+
+}
+
+#ticketBtn{
+
 }
 
 #upcomingshowsdiv {
-    background-color:rgb(189, 104, 82);
+height: 400px;
+position: relative;
 }
 
 #topalbumsdiv {
 
-
+margin-top: 30px;
 }
