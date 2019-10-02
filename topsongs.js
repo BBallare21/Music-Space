@@ -1,4 +1,4 @@
-
+function getTopSongs(artist){
     let lastAPIKey = "8173e09c55bc9e07b713c6edcd74e63e";
 
     let lastTopTracks = "http://ws.audioscrobbler.com/2.0/?method=artist.gettoptracks&artist=" + artist + "&api_key=" + lastAPIKey + "&format=json";
@@ -31,3 +31,4 @@ $("#Song5").append(response.toptracks.track[4].name)
 $("#songplays5").append(response.toptracks.track[4].playcount)
 });
 
+};
