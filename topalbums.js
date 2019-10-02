@@ -41,9 +41,14 @@ $.ajax({
         alDiv3.prepend(image3);
         alDiv4.append(p4);
         alDiv4.prepend(image4);
+
+        $('#album1').empty();
         $('#album1').append(alDiv1);
+        $('#album2').empty();
         $('#album2').append(alDiv2);
+        $('#album3').empty();
         $('#album3').append(alDiv3);
+        $('#album4').empty();
         $('#album4').append(alDiv4);
     });
 }
