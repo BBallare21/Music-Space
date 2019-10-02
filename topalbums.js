@@ -3,19 +3,26 @@ function getAlbum(artist) {
     let lastAPIKey = "8173e09c55bc9e07b713c6edcd74e63e";
     let lastTopAlbum = "http://ws.audioscrobbler.com/2.0/?method=artist.gettopalbums&artist=" + artist + "&api_key=" + lastAPIKey + "&format=json";
 
-$.ajax({
-    url: lastTopAlbum,
-    method: "GET"
-    }).then(function(response) {
+// $.ajax({
+//     url: lastTopAlbum,
+//     method: "GET"
+//     }).then(function(response) {
+
+    fetch(lastTopAlbum)
+    .then(function(response){
+        // console.log(response);
+        response.json().then(function(data){
+        console.log(data);
+        
         console.log(response);
-        let top1 = response.topalbums.album[0].name;
-        let top2 = response.topalbums.album[1].name;
-        let top3 = response.topalbums.album[2].name;
-        let top4 = response.topalbums.album[3].name;
+        let top1 = data.topalbums.album[0].name;
+        let top2 = data.topalbums.album[1].name;
+        let top3 = data.topalbums.album[2].name;
+        let top4 = data.topalbums.album[3].name;
         console.log(top1);
         console.log(top2);
 
-        let data = response.topalbums.album
+        let data1 = data.topalbums.album
         let alDiv1 = $('<div>');
         let alDiv2 = $('<div>');
         let alDiv3 = $('<div>');
@@ -28,11 +35,11 @@ $.ajax({
         let image2 = $('<img>');
         let image3 = $('<img>');
         let image4 = $('<img>');
-        image1.attr('src', data[0].image[2]['#text']);
+        image1.attr('src', data1[0].image[2]['#text']);
         console.log(image1);
-        image2.attr('src', data[1].image[2]['#text']);
-        image3.attr('src', data[2].image[2]['#text']);
-        image4.attr('src', data[3].image[2]['#text']);
+        image2.attr('src', data1[1].image[2]['#text']);
+        image3.attr('src', data1[2].image[2]['#text']);
+        image4.attr('src', data1[3].image[2]['#text']);
         alDiv1.append(p1);
         alDiv1.prepend(image1);
         alDiv2.append(p2);
@@ -51,4 +58,4 @@ $.ajax({
         $('#album4').empty();
         $('#album4').append(alDiv4);
     });
-}
+    })}
