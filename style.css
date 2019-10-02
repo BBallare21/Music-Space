@@ -3,3 +3,43 @@
     height: 690px;
 }
 
+body, html {
+    height: 100%;
+  }
+  
+  body {
+    /* The image used */
+    background-image: url("https://github.com/BBallare21/Music-Space/blob/master/Assets/Photos/music2.jpg?raw=true");
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+#searchbar {
+padding-top: 150px;
+padding-bottom: 50px;
+width: 50%;
+}
+
+.table {
+background-color: pink;
+}
+
+
+#topsongsdiv {
+padding-bottom: 23px;
+}
+
+#upcomingshowsdiv {
+    background-color:rgb(189, 104, 82);
+}
+
+#topalbumsdiv {
+
+
+}
