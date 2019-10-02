@@ -40,71 +40,75 @@
         </div>
     </div>
 
-    <!--1st container upcoming shows-->
 
-    <section class="hero is-info">
-        <div class="hero-body">
-            <div class="container">
-                <div class="title">Upcoming Shows</div>
-                <div class="subtitle" id="showName"></div>
-                <div class="subtitle" id="showDate"></div>
-                <div class="subtitle" id="showTime"></div>
-                <div class="subtitle" id="venue"></div>
-                <a id="ticketLink"><a>
-    
-            </div>
-        </div>
-    </section>
-    
-
-    <!--2nd container holds the Top Songs-->
-
-    <!-- need to have js file that creates an element for each song via onclick function-->
+    <!-- First container holds top songs and events-->
     <div class="container">
-        <div class="card">
-            <div class="card-content">
-                <p class="title">Top Songs</p>
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th>#</th>
-                            <th>Title</th>
-                            <th>Number of Plays</th>
-                        </tr>
-                    </thead>
+        <div class="columns">
+            <!--Left column holds the Top Songs-->
+            <div class="column">
+                <div class="card">
+                    <div class="card-content">
+                        <p class="title">Top Songs</p>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Title</th>
+                                    <th>Number of Plays</th>
+                                </tr>
+                            </thead>
 
-                    <tbody>
-                        <tr>
-                            <th>1</th>
-                            <td id="Song1"></td>
-                            <td id="songplays1"></td>
-                        </tr>
+                            <tbody>
+                                <tr>
+                                    <th>1</th>
+                                    <td id="Song1"></td>
+                                    <td id="songplays1"></td>
+                                </tr>
 
-                        <tr>
-                            <th>2</th>
-                            <td id="Song2"></td>
-                            <td id="songplays2"></td>
-                        </tr>
+                                <tr>
+                                    <th>2</th>
+                                    <td id="Song2"></td>
+                                    <td id="songplays2"></td>
+                                </tr>
 
-                        <tr>
-                            <th>3</th>
-                            <td id="Song3"></td>
-                            <td id="songplays3"></td>
-                        </tr>
+                                <tr>
+                                    <th>3</th>
+                                    <td id="Song3"></td>
+                                    <td id="songplays3"></td>
+                                </tr>
 
-                        <tr>
-                            <th>4</th>
-                            <td id="Song4"></td>
-                            <td id="songplays4"></td>
-                        </tr>
+                                <tr>
+                                    <th>4</th>
+                                    <td id="Song4"></td>
+                                    <td id="songplays4"></td>
+                                </tr>
 
-                        <tr>
-                            <th>5</th>
-                            <td id="Song5"></td>
-                            <td id="songplays5"></td>
-                        </tr>
-                    </tbody>
-                </table>
+                                <tr>
+                                    <th>5</th>
+                                    <td id="Song5"></td>
+                                    <td id="songplays5"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!--Right column holds upcoming shows-->
+            <div class="column">
+                <section class="hero is-info">
+                    <div class="hero-body">
+                        <div class="container">
+                            <div class="title">Upcoming Shows</div>
+                            <div class="subtitle" id="showName"></div>
+                            <div class="subtitle" id="showDate"></div>
+                            <div class="subtitle" id="showTime"></div>
+                            <div class="subtitle" id="venue"></div>
+                            <a id="ticketLink"><a>
+
+                        </div>
+                    </div>
+                </section>
             </div>
         </div>
     </div>
