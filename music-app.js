@@ -1,25 +1,26 @@
-$(document).ready(function() {
+$(document).ready(function () {
 
     let submitBtn = $("#submitButton");
-    
-    submitBtn.on("click", function(){
+
+    submitBtn.on("click", function () {
         let artist = $("input").val();
         console.log(artist);
-        if(artist) {
+        if (artist) {
             getUpcomingShows(artist);
             getTopSongs(artist);
             getAlbum(artist);
-    
+
         }
-    })
+    });
 
-    let cancelBtn = $("#cancelButton");
+   $("input").keyup(function(event) {
+       console.log(event);
+       console.log(event.key);
+        if (event.keyCode === 13) {
+            $("#submitButton").click();
+        }
+   });
 
-    cancelBtn.on("click", function(){
-        $("input").text('');
-    })
-
-    
 
 });
 

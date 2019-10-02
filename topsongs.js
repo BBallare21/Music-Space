@@ -11,23 +11,34 @@ $.ajax({
       }).then(function(response) {
           console.log(response);
 //Song #1
+$("#Song1").empty();
 $("#Song1").text(response.toptracks.track[0].name)
+$('#songplays1').empty();
 $("#songplays1").append(response.toptracks.track[0].playcount)
 console.log(response.toptracks.track[0].name)
+
 //Song #2
+$("#Song2").empty();
 $("#Song2").append(response.toptracks.track[1].name)
+$('#songplays2').empty();
 $("#songplays2").append(response.toptracks.track[1].playcount)
 
 //Song #3
+$("#Song3").empty();
 $("#Song3").append(response.toptracks.track[2].name)
+$('#songplays3').empty();
 $("#songplays3").append(response.toptracks.track[2].playcount)
 
 //Song #4
+$("#Song4").empty();
 $("#Song4").append(response.toptracks.track[3].name)
+$('#songplays4').empty();
 $("#songplays4").append(response.toptracks.track[3].playcount)
 
 //Song #5
+$("#Song5").empty();
 $("#Song5").append(response.toptracks.track[4].name)
+$('#songplays5').empty();
 $("#songplays5").append(response.toptracks.track[4].playcount)
 });
 
