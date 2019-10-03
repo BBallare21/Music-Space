@@ -73,6 +73,16 @@ margin-top: 30px;
 		1px 1px 0 #000;
 }
 
+#artistPic {
+  height:200px;
+
+}
+
+.column {
+  height:230px;
+}
+
+
 /*small devices (phones, 600px and down) */
 @media only screen and (max-width: 767px) {
 #topsongsdiv{
