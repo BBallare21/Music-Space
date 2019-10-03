@@ -44,6 +44,18 @@ position: relative;
 margin-top: 30px;
 }
 
+#above {
+  height: 300px;
+}
+
+#below {
+  height:100px;
+}
+
+#logo {
+  padding-right:20px;
+}
+
 #title {
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
