@@ -60,6 +60,24 @@ margin-top: 30px;
   padding-right:20px;
 }
 
+#showName{
+  font-size: 10px;
+}
+
+#showDate{
+  font-size: 10px;
+}
+
+#showTime{
+  font-size: 10px;
+}
+  
+#venue{
+  font-size: 10px;
+}
+
+
+
 #title {
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
