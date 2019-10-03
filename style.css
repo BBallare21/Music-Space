@@ -7,18 +7,14 @@ body, html {
     height: 100%;
   }
   
-  body {
+  html {
     /* The image used */
-    background-image: url("https://github.com/BBallare21/Music-Space/blob/master/Assets/Photos/music2.jpg?raw=true");
-  
+    background-image: url("http://www.nasa.gov/sites/default/files/thumbnails/image/wise_nebula.jpg");
     /* Full height */
     height: 100%;
-  
     /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
-  }
+}
 
 #searchbar {
 padding-top: 150px;
@@ -57,5 +53,19 @@ margin-top: 30px;
 }
 
 #logo {
-  padding-right:20px
+  padding-right:20px;
+}
+
+#title {
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: -75px;
+    font-size: 82px;
+    text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
 }
