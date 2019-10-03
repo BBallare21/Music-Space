@@ -3,7 +3,7 @@ function getUpcomingShows(artist){
 
     let ticketAPIKey = "Ni82NUKOyTGYQYTtVKDK6zAzqMhxnI49";
     
-    let ticketURL ="http://app.ticketmaster.com/discovery/v1/events.json?keyword=" + artist + "&apikey=" + ticketAPIKey;
+    let ticketURL ="https://app.ticketmaster.com/discovery/v1/events.json?keyword=" + artist + "&apikey=" + ticketAPIKey;
     // $.ajax({
     //     url: ticketURL,
     //     method: "GET"

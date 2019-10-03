@@ -1,7 +1,7 @@
 function getTopSongs(artist){
     let lastAPIKey = "8173e09c55bc9e07b713c6edcd74e63e";
 
-    let lastTopTracks = "http://ws.audioscrobbler.com/2.0/?method=artist.gettoptracks&artist=" + artist + "&api_key=" + lastAPIKey + "&format=json";
+    let lastTopTracks = "https://ws.audioscrobbler.com/2.0/?method=artist.gettoptracks&artist=" + artist + "&api_key=" + lastAPIKey + "&format=json";
 
     // ===== Appending songs to table in html ======
 
