@@ -33,6 +33,7 @@ width: 500px;
 height: 400px;
 margin-top: 0px;
 margin-bottom: 0px;
+overflow: hidden;
 }
 
 #upcomingshowsdiv {
@@ -44,14 +45,6 @@ margin-bottom: 0px;
 
 #topalbumsdiv {
 margin-top: 30px;
-}
-
-#above {
-  /* height: 300px; */
-}
-
-#below {
-  /* height:100px; */
 }
 
 #logo {
@@ -88,14 +81,14 @@ margin-top: 30px;
     color: white;
     width: auto;
     text-align: center;
+    width: 100%;
 }
 
 .pic {
     border: 1px solid;
     border-radius: 5px;
     background-image: url("http://www.nasa.gov/sites/default/files/thumbnails/image/wise_nebula.jpg");
-    padding: 20px;
-    margin-left: 40px;
+    width: 100%;
 }
 
 
@@ -141,6 +134,10 @@ font-size: 15px;
   padding: 20px;
 }
 
+.mediaalbum{
+    padding: 0;
+    margin: 0;
+}
 
 #topalbumsdiv {
 margin-left: 10px;
