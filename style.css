@@ -3,6 +3,7 @@
     height: 690px;
 }
 
+
 body, html {
     height: 100%;
 }
@@ -26,26 +27,31 @@ width: 50%;
 width: 500px;
 }
 
+/*desktop upcoming events text*/
 
 #topsongsdiv {
 height: 400px;
+margin-top: 0px;
+margin-bottom: 0px;
 }
 
 #upcomingshowsdiv {
 height: 400px;
+margin-top: 0px;
+margin-bottom: 0px;
 }
 
-#topalbumsdiv {
 
+#topalbumsdiv {
 margin-top: 30px;
 }
 
 #above {
-  height: 300px;
+  /* height: 300px; */
 }
 
 #below {
-  height:100px;
+  /* height:100px; */
 }
 
 #logo {
@@ -68,8 +74,7 @@ margin-top: 30px;
 
 #artistPic {
   height:200px;
-  margin-left:10px;
-
+  margin-left: 10px;
 }
 
 #column {
@@ -116,7 +121,26 @@ margin-left: 10px;
 margin-right: 10px;
 height:auto;
 width:auto;
+padding: 20px;
 }
+
+#showName{
+font-size: 15px;
+}
+#showDate{
+  font-size: 15px;
+}
+#showTime{
+  font-size: 15px;
+}
+#venue{
+  font-size: 15px;
+}
+
+#above {
+  padding: 20px;
+}
+
 
 #topalbumsdiv {
 margin-left: 10px;
@@ -156,6 +180,24 @@ width:auto;
   height:auto;
   width:auto;
   }  
+
+  
+#showName{
+  font-size: 30px;
+  }
+  #showDate{
+    font-size: 30px;
+  }
+  #showTime{
+    font-size: 30px;
+  }
+  #venue{
+    font-size: 30px;
+  }
+  
+  #above {
+    padding-left: 20px;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -181,4 +223,21 @@ width:auto;
     margin-bottom: -100px;
     margin-top: 75px;
     }
+
+    #showName{
+      font-size: 30px;
+      }
+      #showDate{
+        font-size: 30px;
+      }
+      #showTime{
+        font-size: 30px;
+      }
+      #venue{
+        font-size: 30px;
+      }
+      
+      #above {
+        padding-left: 20px;
+      }
 }
