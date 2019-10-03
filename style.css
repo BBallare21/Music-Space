@@ -3,12 +3,9 @@
     height: 690px;
 }
 
-
-
-
 body, html {
     height: 100%;
-  }
+}
   
   html {
     /* The image used */
@@ -27,14 +24,11 @@ width: 50%;
 
 .table {
 width: 500px;
-
 }
 
 
 #topsongsdiv {
 height: 400px;
-/* margin: auto; */
-
 }
 
 #upcomingshowsdiv {
@@ -80,6 +74,23 @@ margin-top: 30px;
 
 #column {
   height:230px;
+}
+
+.album {
+    border: 1px solid;
+    border-radius: 8px;
+    background-image: url("http://www.nasa.gov/sites/default/files/thumbnails/image/wise_nebula.jpg");
+    color: white;
+    width: auto;
+    text-align: center;
+}
+
+.pic {
+    border: 1px solid;
+    border-radius: 5px;
+    background-image: url("http://www.nasa.gov/sites/default/files/thumbnails/image/wise_nebula.jpg");
+    padding: 20px;
+    margin-left: 40px;
 }
 
 
