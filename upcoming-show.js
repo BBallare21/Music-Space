@@ -82,6 +82,18 @@ function getUpcomingShows(artist){
 
     });
     
-    
+    let imageURL = "https://rest.bandsintown.com/artists/" + artist + "?app_id=codingbootcamp";
+
+    fetch(imageURL)
+        .then(function(response){
+            console.log(response);
+            response.json().then(function(data){
+            console.log(data);
+
+            let artistImage = data.thumb_url;
+            $("#artistPic").attr("src", artistImage)
+
+            });
+      });
 };
     

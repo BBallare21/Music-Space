@@ -69,3 +69,12 @@ margin-top: 30px;
 		-1px 1px 0 #000,
 		1px 1px 0 #000;
 }
+
+#artistPic {
+  height:200px;
+
+}
+
+.column {
+  height:230px;
+}
