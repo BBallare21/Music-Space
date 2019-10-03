@@ -39,7 +39,6 @@ height: 400px;
 
 #upcomingshowsdiv {
 height: 400px;
-position: relative;
 }
 
 #topalbumsdiv {
@@ -75,10 +74,11 @@ margin-top: 30px;
 
 #artistPic {
   height:200px;
+  margin-left:10px;
 
 }
 
-.column {
+#column {
   height:230px;
 }
 
@@ -89,6 +89,9 @@ margin-top: 30px;
 margin-bottom: 30px;
 margin-left: 10px;
 margin-right: 10px;
+margin-top:200px;
+height:auto;
+width:auto;
 }
 
 #title {
@@ -100,11 +103,15 @@ margin-top: 75px;
 #upcomingshowsdiv {
 margin-left: 10px;
 margin-right: 10px;
+height:auto;
+width:auto;
 }
 
 #topalbumsdiv {
 margin-left: 10px;
 margin-right: 10px;
+height:auto;
+width:auto;
 }
 }
 
@@ -115,21 +122,28 @@ margin-right: 10px;
   font-size: 75px;
   margin-bottom: -100px;
   margin-top: 75px;
+
   }
 #topsongsdiv {
   margin-bottom: 30px;
   margin-left: 20px;
   margin-right: 20px;
+  height:auto;
+  width:auto;
   }
 
 #upcomingshowsdiv {
   margin-left: 20px;
   margin-right: 20px;
+  height:auto;
+  width:auto;
   }
     
 #topalbumsdiv {
   margin-left: 20px;
   margin-right: 20px;
+  height:auto;
+  width:auto;
   }  
 }
 
@@ -137,12 +151,18 @@ margin-right: 10px;
 @media only screen and (min-width: 992px) {
   #topsongsdiv {
     margin-right: 15px;
+    height:auto;
+    width:auto;
       }
   #upcomingshowsdiv {
     margin-left: 15px;
+    height:auto;
+    width:auto;
   }
   #topalbumsdiv {
   margin-top: 0px;
+  height:auto;
+  width:auto;
   }
 
   #title {
