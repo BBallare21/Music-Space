@@ -29,7 +29,6 @@
         </div>
     </div>
 
-
     <!-- First container holds top songs and events-->
     <div class="container">
         <div class="columns">
@@ -86,19 +85,22 @@
             <!--Right column holds upcoming shows-->
             <div class="column">
                 <div id="upcomingshowsdiv" class="card">
-                    <div class="card-content">
+                    <div class="row card-content" id="above">
                         <div class="title has-text-centered">Upcoming Shows</div>
-                        <div class="subtitle" id="showName"></div>
-                        <div class="subtitle" id="showDate"></div>
-                        <div class="subtitle" id="showTime"></div>
-                        <div class="subtitle" id="venue"></div>
-                        <div class="subtitle" id="venueLocation"></div>
-                        <div class="control">
-                            <a class="button is-link" type="submit" id="ticketBtn" href="" target="_blank">
-                                Buy Tickets
-                            </a>
-                        </div>
+                        <div class="is-family-primary has-text-weight-bold is-capitalized is-size-4 title is-spaced" id="showName"></div>
+                        <div class="subtitle is-family-primary has-text-weight-semibold is-size-5" id="showDate"></div>
+                        <div class="subtitle is-family-primary has-text-weight-semibold is-size-5" id="showTime"></div>
+                        <div class="subtitle is-family-primary has-text-weight-semibold is-size-5" id="venue"></div>
+                        <div class="subtitle is-family-primary has-text-weight-semibold is-size-5" id="venueLocation"></div>
                     </div>
+
+                    <div class="row card-footer-item control" id="below">
+                        <img src="./Assets/Photos/ticketmaster.png" alt="Ticketmaster" id="logo" width="180" height="45">
+                        <a class="button is-link" type="submit" id="ticketBtn" href="" target="_blank">
+                            Buy Tickets
+                        </a>                    
+                    </div>
+
                 </div>
             </div>
         </div>
