@@ -19,8 +19,11 @@ $(document).ready(function () {
         if (event.keyCode === 13) {
             $("#submitButton").click();
         }
+        $('#submitButton').click(
+            function(){
+                $('input').val('');
+            });
    });
-
 
 });
 

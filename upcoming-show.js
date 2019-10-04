@@ -61,6 +61,7 @@ function getUpcomingShows(artist){
         // console.log(ticketLink);
 
         // let showNameDiv = $("#showName");
+        $('#showName').text('');
         $("#showName").text(showName);
 
         // let showDateDiv = $("#showDate")
