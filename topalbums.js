@@ -27,10 +27,10 @@ function getAlbum(artist) {
         let alDiv2 = $('<div>');
         let alDiv3 = $('<div>');
         let alDiv4 = $('<div>');
-        let p1 = $('<p class="album">').text(top1);
-        let p2 = $('<p class="album">').text(top2);
-        let p3 = $('<p class="album">').text(top3);
-        let p4 = $('<p class="album">').text(top4);
+        let p1 = $('<p class="album mediaalbum">').text(top1);
+        let p2 = $('<p class="album mediaalbum">').text(top2);
+        let p3 = $('<p class="album mediaalbum">').text(top3);
+        let p4 = $('<p class="album mediaalbum">').text(top4);
         let image1 = $('<img class=pic>');
         let image2 = $('<img class=pic>');
         let image3 = $('<img class=pic>');
