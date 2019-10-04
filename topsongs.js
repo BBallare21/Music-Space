@@ -5,12 +5,6 @@ function getTopSongs(artist){
 
     // ===== Appending songs to table in html ======
 
-// $.ajax({
-//       url: lastTopTracks,
-//       method: "GET"
-//       }).then(function(response) {
-//           console.log(response);
-
     fetch(lastTopTracks)
     .then(function(response){
         console.log(response);
