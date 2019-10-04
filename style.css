@@ -41,14 +41,31 @@ margin-bottom: 30px;
 margin-left: 15px;
 }
 
-#upcomingshowsheading {
-  margin-top: 20px;
+#upcomingshowsheading{
+  margin-top:20px;
 }
-
 
 #logo {
   padding-right:20px;
 }
+
+#showName{
+  font-size: 20px;
+}
+
+#showDate{
+  font-size: 20px;
+}
+
+#showTime{
+  font-size: 20px;
+}
+  
+#venue{
+  font-size: 20px;
+}
+
+
 
 #title {
     color: white;
@@ -146,7 +163,7 @@ margin-left: 15px;
       }
       
       #above {
-        padding-left: 20px;
+        padding-left: 18px;
       }
 }
 
