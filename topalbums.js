@@ -3,11 +3,6 @@ function getAlbum(artist) {
     let lastAPIKey = "8173e09c55bc9e07b713c6edcd74e63e";
     let lastTopAlbum = "https://ws.audioscrobbler.com/2.0/?method=artist.gettopalbums&artist=" + artist + "&api_key=" + lastAPIKey + "&format=json";
 
-// $.ajax({
-//     url: lastTopAlbum,
-//     method: "GET"
-//     }).then(function(response) {
-
     fetch(lastTopAlbum)
     .then(function(response){
         // console.log(response);

@@ -4,11 +4,6 @@ function getUpcomingShows(artist){
     let ticketAPIKey = "Ni82NUKOyTGYQYTtVKDK6zAzqMhxnI49";
     
     let ticketURL ="https://app.ticketmaster.com/discovery/v1/events.json?keyword=" + artist + "&apikey=" + ticketAPIKey;
-    // $.ajax({
-    //     url: ticketURL,
-    //     method: "GET"
-    //     }).then(function(response) {
-    //         console.log(response);
     
     fetch(ticketURL)
         .then(function(response){
@@ -41,7 +36,7 @@ function getUpcomingShows(artist){
             let newDate = dateObj.toDateString()
             return newDate
             // return new Intl.DateTimeFormat('en-US').format(dateObj);
-          }
+        }
 
         let eventDay = formatCourseDate(showDate);
         console.log(eventDay);
