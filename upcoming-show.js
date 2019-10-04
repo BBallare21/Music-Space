@@ -16,6 +16,14 @@ function getUpcomingShows(artist){
             response.json().then(function(data){
             console.log(data);
             
+            if (!data._embedded) {
+              $("#showName").text('');
+              $("#showDate").text('');
+              $("#showTime").text('');
+              $("#venue").text('');
+    
+              return;
+            }
         
         let showName = data._embedded.events[0].name;
         let showDate = data._embedded.events[0].dates.start.localDate;
